@@ -62,3 +62,72 @@ body {
 .about-box li {
   margin-bottom: 8px;
 }
+.banner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner-image {
+  z-index: 0;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+  border-radius: 10px;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #f59e0b; /* orange button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #d97706; /* darker on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .banner-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
